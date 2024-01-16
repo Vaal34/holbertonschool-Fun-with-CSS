@@ -1,0 +1,35 @@
+.toggle-inner {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 100px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.toggle-switch {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid rgb(194, 194, 194);
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    transition: 0.5s;
+}
+
+input {
+    display: none;
+}
+
+#toggle-0:checked + label .toggle-switch {
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    transition: 0.5s;
+}
+
+#toggle-0:checked + label .toggle-inner {
+    background-color: crimson;
+    transition: 0.5s;
+}
